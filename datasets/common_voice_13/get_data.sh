@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prepare CommonVoice datasets
+#
+# The following code is deprecated. Please download the data from https://commonvoice.mozilla.org/en/datasets directly.
 
 if [ "$#" -ne 1 ]; then
   echo "Usage: $0 <download_dir>"
@@ -13,7 +15,7 @@ download_dir=$(realpath $1)
 echo $download_dir
 
 echo "Data Download"
-common_voice_url="https://mozilla-common-voice-datasets.s3.dualstack.us-west-2.amazonaws.com/cv-corpus-13.0-2023-03-09/cv-corpus-13.0-2023-03-09"
+common_voice_url=""
 
 # the four locales for the experiments with Fisher-CALLHOME and MSLT
 languages="es en de fr"
